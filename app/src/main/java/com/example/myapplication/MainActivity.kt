@@ -13,11 +13,19 @@ class MainActivity : AppCompatActivity() {
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
+        try{
+
+        }
+        catch(e:Exception){
+             e.printStackTrace()
+        }
     }
+
     fun Giris(view: View){
 
     }
     fun Kaydol(view: View){
 
     }
+
 }
