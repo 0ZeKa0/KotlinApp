@@ -1,12 +1,14 @@
 package com.example.myapplication
 
 class Sınıf {
-    var AdSoyad=""
+    var Ad=""
+    var Soyad=""
     var Sifre=""
     var mail=""
 
-    constructor(AdSoyad:String,Sifre:String,mail:String){
-        this.AdSoyad=AdSoyad
+    constructor(Ad:String,Soyad:String,Sifre:String,mail:String){
+        this.Ad=Ad
+        this.Soyad=Soyad
         this.Sifre=Sifre
         this.mail=mail
     }
