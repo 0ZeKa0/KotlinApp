@@ -32,6 +32,8 @@ class MainActivity : AppCompatActivity() {
 
     }
     fun SifremiUnuttum(view: View){
+        val intent = Intent(applicationContext,MainActivity4::class.java)
+        startActivity(intent)
 
     }
 
