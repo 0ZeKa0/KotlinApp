@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/background"
     tools:context=".MainActivity">
 
     <EditText
@@ -43,11 +44,11 @@
         android:background="@drawable/custom_button"
         android:backgroundTint="#81ACC5C8"
         android:backgroundTintMode="src_over"
+        android:elevation="100dp"
         android:fallbackLineSpacing="true"
         android:filterTouchesWhenObscured="true"
         android:onClick="Giris"
         android:text="Giriş"
-        android:elevation="100dp"
         android:textAppearance="@style/TextAppearance.AppCompat.Body2"
         android:textColor="#5B275BD5"
         android:textSize="13dp"
