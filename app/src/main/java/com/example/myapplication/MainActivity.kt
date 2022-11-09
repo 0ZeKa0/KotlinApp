@@ -1,5 +1,6 @@
 package com.example.myapplication
 
+import android.content.Intent
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -22,9 +23,12 @@ class MainActivity : AppCompatActivity() {
     }
 
     fun Giris(view: View){
-
+        val intent = Intent(applicationContext, MainActivity2::class.java)
+        startActivity(intent)
     }
     fun Kaydol(view: View){
+        val intent = Intent(applicationContext,MainActivity3::class.java)
+        startActivity(intent)
 
     }
     fun SifremiUnuttum(view: View){
