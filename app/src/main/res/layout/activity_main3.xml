@@ -9,36 +9,75 @@
 
 
     <LinearLayout
-        android:layout_width="345dp"
-        android:layout_height="292dp"
+        android:layout_width="376dp"
+        android:layout_height="303dp"
         android:orientation="vertical"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.457"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.379"
         tools:ignore="MissingConstraints">
 
         <EditText
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"></EditText>
+            android:id="@+id/isim"
+            android:layout_width="314dp"
+            android:layout_height="33dp"
+            android:layout_gravity="center"
+            android:layout_margin="15dp"
+            android:background="@drawable/custom_input" />
 
         <EditText
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"></EditText>
+            android:id="@+id/soyisim"
+            android:layout_width="314dp"
+            android:layout_height="33dp"
+            android:layout_gravity="center"
+            android:layout_margin="15dp"
+            android:background="@drawable/custom_input" />
 
         <EditText
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"></EditText>
+            android:id="@+id/mail2"
+            android:layout_width="314dp"
+            android:layout_height="33dp"
+            android:layout_gravity="center"
+            android:layout_margin="15dp"
+            android:background="@drawable/custom_input" />
 
         <EditText
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"></EditText>
+            android:id="@+id/sifre2"
+            android:layout_width="314dp"
+            android:layout_height="33dp"
+            android:layout_gravity="center"
+            android:layout_margin="15dp"
+            android:background="@drawable/custom_input"
+            android:ems="10"
+            android:inputType="textPassword" />
 
         <Button
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:id="@+id/Kayit"
+            style="@style/Widget.AppCompat.Button.Borderless.Colored"
+            android:layout_width="72dp"
+            android:layout_height="31dp"
             android:layout_gravity="center"
-            android:layout_margin="3dp"></Button>
+            android:layout_margin="15dp"
+            android:background="@drawable/custom_button"
+            android:backgroundTint="#81ACC5C8"
+            android:backgroundTintMode="src_over"
+            android:elevation="100dp"
+            android:fallbackLineSpacing="true"
+            android:filterTouchesWhenObscured="true"
+            android:onClick="Kayit"
+            android:text="Kaydol"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+            android:textColor="#5B275BD5"
+            android:textSize="13dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.498"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.528" />
 
 
     </LinearLayout>
