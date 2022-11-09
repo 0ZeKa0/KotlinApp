@@ -27,5 +27,8 @@ class MainActivity : AppCompatActivity() {
     fun Kaydol(view: View){
 
     }
+    fun SifremiUnuttum(view: View){
+
+    }
 
 }

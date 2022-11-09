@@ -7,85 +7,126 @@
     android:background="@drawable/background"
     tools:context=".MainActivity">
 
-    <EditText
-        android:id="@+id/Sifre"
-        android:layout_width="209dp"
-        android:layout_height="40dp"
-        android:background="@drawable/custom_input"
-        android:drawableStart="@drawable/password"
-        android:ems="10"
-        android:inputType="textPassword"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.448"
-        tools:ignore="MissingConstraints" />
-
-    <TextView
-        android:id="@+id/text1"
+    <LinearLayout
+        android:id="@+id/linearLayout"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:onClick="Kaydol"
-        android:text="Şifremi Unuttum"
-        android:textColor="#275BD5"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.665" />
-
-    <Button
-        android:id="@+id/button"
-        style="@style/Widget.AppCompat.Button.Borderless.Colored"
-        android:layout_width="72dp"
-        android:layout_height="31dp"
-        android:background="@drawable/custom_button"
-        android:backgroundTint="#81ACC5C8"
-        android:backgroundTintMode="src_over"
-        android:elevation="100dp"
-        android:fallbackLineSpacing="true"
-        android:filterTouchesWhenObscured="true"
-        android:onClick="Giris"
-        android:text="Giriş"
-        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
-        android:textColor="#5B275BD5"
-        android:textSize="13dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.528" />
-
-    <EditText
-        android:id="@+id/editTextTextPersonName"
-        android:layout_width="214dp"
-        android:layout_height="43dp"
-        android:background="@drawable/custom_input"
-        android:drawableStart="@drawable/email"
-        android:ems="10"
-        android:inputType="textPersonName"
+        android:orientation="vertical"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.353"
-        tools:ignore="MissingConstraints" />
+        app:layout_constraintVertical_bias="0.332">
 
-    <TextView
-        android:id="@+id/textView"
+        <EditText
+            android:id="@+id/mail"
+            android:layout_width="214dp"
+            android:layout_height="43dp"
+            android:layout_margin="10dp"
+            android:background="@drawable/custom_input"
+            android:drawableStart="@drawable/email"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:textColor="@android:color/darker_gray"
+            android:textSize="15sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.497"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.353"
+            tools:ignore="MissingConstraints" />
+
+        <EditText
+            android:id="@+id/Sifre"
+            android:layout_width="209dp"
+            android:layout_height="40dp"
+            android:layout_margin="10dp"
+            android:background="@drawable/custom_input"
+            android:drawableStart="@drawable/password"
+            android:ems="10"
+            android:inputType="textPassword"
+            android:textColor="@android:color/darker_gray"
+            android:textSize="15sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.448"
+            tools:ignore="MissingConstraints" />
+
+    </LinearLayout>
+
+    <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Kaydol"
-        android:textColor="#275BD5"
+        android:orientation="vertical"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.592" />
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout"
+        app:layout_constraintVertical_bias="0.096">
+
+        <Button
+            android:id="@+id/button"
+            style="@style/Widget.AppCompat.Button.Borderless.Colored"
+            android:layout_width="72dp"
+            android:layout_height="31dp"
+            android:layout_gravity="center"
+            android:layout_margin="15dp"
+            android:background="@drawable/custom_button"
+            android:backgroundTint="#81ACC5C8"
+            android:backgroundTintMode="src_over"
+            android:elevation="100dp"
+            android:fallbackLineSpacing="true"
+            android:filterTouchesWhenObscured="true"
+            android:onClick="Giris"
+            android:text="Giriş"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+            android:textColor="#5B275BD5"
+            android:textSize="13dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.498"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.528" />
+
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="5dp"
+            android:onClick="Kaydol"
+            android:text="Kaydol"
+            android:textColor="#275BD5"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.592" />
+
+        <TextView
+            android:id="@+id/text1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="5dp"
+            android:onClick="SifremiUnuttum"
+            android:text="Şifremi Unuttum"
+            android:textColor="#275BD5"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.498"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.665" />
+
+    </LinearLayout>
 
 
 </android.support.constraint.ConstraintLayout>
