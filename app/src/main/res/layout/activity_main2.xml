@@ -6,12 +6,12 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity2">
 
-    <androidx.appcompat.widget.Toolbar
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:outlineSpotShadowColor="@color/black"
-        android:outlineAmbientShadowColor="@color/purple_200">
 
-    </androidx.appcompat.widget.Toolbar>
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="769dp"
+        android:layout_weight="1"
+        android:text="Sayac: " />
 
-    </LinearLayout>
+</LinearLayout>

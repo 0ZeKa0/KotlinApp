@@ -12,4 +12,5 @@ class Sınıf {
         this.Sifre=Sifre
         this.mail=mail
     }
+
 }

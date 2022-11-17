@@ -67,7 +67,7 @@
             android:elevation="100dp"
             android:fallbackLineSpacing="true"
             android:filterTouchesWhenObscured="true"
-            android:onClick="Kayit"
+            android:onClick="Kaydol"
             android:text="Kaydol"
             android:textAppearance="@style/TextAppearance.AppCompat.Body2"
             android:textColor="#5B275BD5"
