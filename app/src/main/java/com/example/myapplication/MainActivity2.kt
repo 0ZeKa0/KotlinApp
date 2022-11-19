@@ -16,16 +16,9 @@ class MainActivity2 : AppCompatActivity() {
         binding = ActivityMain2Binding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        object: CountDownTimer(10000,1000){
-            override fun onTick(p0: Long) {
-                binding.textView3.setText("Kalan:${p0/1000}")
+    }
 
-            }
+    fun Ekle(view: View){
 
-            override fun onFinish() {
-                binding.textView3.setText("Kalan:0")
-            }
-
-        }.start()
     }
 }
