@@ -33,6 +33,11 @@ class MainActivity2 : AppCompatActivity() {
 
             FragmentTransaction.replace(R.id.FrameLayout,FirstFragment).commit()
 
+    }
+    fun liste(view: View){
+
+    }
+    fun ben(view: View){
 
     }
 }
