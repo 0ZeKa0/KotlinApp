@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
+
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:layout_gravity="center"
@@ -15,27 +16,32 @@
         >
 
         <EditText
+            android:id="@+id/is"
             android:layout_width="314dp"
             android:layout_height="33dp"
             android:layout_margin="10dp"
-            android:inputType="text"
-            android:background="@drawable/custom_input"/>
+            android:background="@drawable/custom_input"
+            android:inputType="text" />
 
         <EditText
+            android:id="@+id/zaman"
             android:layout_width="match_parent"
             android:layout_height="33dp"
             android:layout_margin="10dp"
-            android:inputType="time"
-            android:background="@drawable/custom_input"/>
+            android:background="@drawable/custom_input"
+            android:inputType="time" />
+
         <Button
+            android:id="@+id/ayarla"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:layout_margin="10dp"
             android:background="@drawable/custom_button"
-            android:text="Ayarla"
             android:elevation="20dp"
-            android:textColor="@color/purple_200"/>
+            android:onClick="ayarla"
+            android:text="Ayarla"
+            android:textColor="@color/purple_200" />
 
     </LinearLayout>
 </FrameLayout>

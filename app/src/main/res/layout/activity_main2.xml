@@ -8,23 +8,34 @@
     tools:context=".MainActivity2">
 
     <Button
+        android:id="@+id/ekle"
         android:layout_width="73dp"
         android:layout_height="71dp"
         android:background="@drawable/button2"
         android:elevation="40dp"
-        android:padding="10dp"
         android:gravity="center"
+        android:onClick="Ekle"
+        android:padding="10dp"
         android:text="+"
         android:textAlignment="center"
         android:textColor="@color/purple_200"
         android:textSize="40dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.877"
+        app:layout_constraintHorizontal_bias="0.917"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.918"
         tools:ignore="MissingConstraints" />
+
+    <FrameLayout
+        android:layout_width="409dp"
+        android:layout_height="537dp"
+        tools:layout_editor_absoluteX="1dp"
+        tools:layout_editor_absoluteY="1dp"
+        android:id="@+id/FrameLayout"/>
+
+
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
