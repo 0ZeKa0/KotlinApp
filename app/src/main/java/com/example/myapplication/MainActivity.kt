@@ -18,7 +18,10 @@ class MainActivity : AppCompatActivity() {
         println("onCreate fonksiyonu çağırıldı")
 
         try{
-
+        val veritabani = this.openOrCreateDatabase("Kullanici", MODE_PRIVATE,null)
+            veritabani.execSQL("CREATE TABLE IF NOT EXISTS kullanici_bilgileri (id INTEGER PRIMARY KEY, Ad VARCHAR, Soyad VARCHAR, Mail VARCHAR, Sifre VARCHAR)")
+            veritabani.execSQL("CREATE TABLE IF NOT EXISTS calisma_bilgileri(id INTEGER PRIMARY KEY, Mail VARCHAR, Sure DATETIME, Ish VARCHAR)")
+            veritabani.execSQL("INSERT INTO kullanici_bilgileri(Ad,Soyad,Mail,Sifre) VALUES('Zehra','Karakaya','zehrakarakayazeze@gmail.com','1234')")
         }
         catch(e:Exception){
              e.printStackTrace()
