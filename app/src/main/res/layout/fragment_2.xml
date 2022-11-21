@@ -3,7 +3,6 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="?attr/fullscreenBackgroundColor"
     android:theme="@style/ThemeOverlay.MyApplication.FullscreenContainer"
     tools:context=".Fragment2">
 
@@ -24,6 +23,10 @@
             android:layout_gravity="bottom|center_horizontal"
             android:orientation="vertical"
             tools:ignore="UselessParent"/>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
     </FrameLayout>
 
 </FrameLayout>

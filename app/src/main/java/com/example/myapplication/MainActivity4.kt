@@ -20,6 +20,7 @@ class MainActivity4 : AppCompatActivity() {
 
     fun Gonder(view: View){
 
+
         val intent= Intent(applicationContext,MainActivity::class.java)
         startActivity(intent)
         finish()
