@@ -17,8 +17,10 @@ import com.example.myapplication.databinding.Fragment2Binding
  * status bar and navigation/system bar) with user interaction.
  */
 class Fragment2 : Fragment() {
-    private lateinit var ListeAdapter:RecycleAdapter
+    private lateinit var listeAdapter: RecycleAdapter
     private val hideHandler = Handler(Looper.myLooper()!!)
+    val calisma_suresi= ArrayList<String>()
+    val Is = ArrayList<String>()
 
     @Suppress("InlinedApi")
     private val hidePart2Runnable = Runnable {
@@ -41,12 +43,16 @@ class Fragment2 : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
 
+
+
         _binding = Fragment2Binding.inflate(inflater, container, false)
         return binding.root
 
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+
+        listeAdapter = RecycleAdapter(calisma_suresi,Is)
         super.onViewCreated(view, savedInstanceState)
 
     }
