@@ -43,8 +43,6 @@ class Fragment2 : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
 
-
-
         _binding = Fragment2Binding.inflate(inflater, container, false)
         return binding.root
 
