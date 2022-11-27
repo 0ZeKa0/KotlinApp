@@ -14,7 +14,6 @@ import com.example.myapplication.databinding.FragmentActivityMain2FragmentBindin
 
 
 class activity_main2_fragment : Fragment() {
-    // TODO: Rename and change types of parameters
 
     private lateinit var _binding: FragmentActivityMain2FragmentBinding
     private val binding get() = _binding!!

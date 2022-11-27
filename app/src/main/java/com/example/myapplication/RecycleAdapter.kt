@@ -10,7 +10,9 @@ import androidx.recyclerview.widget.RecyclerView.ViewHolder
 
 class RecycleAdapter(val calisma_suresi: ArrayList<String>,val Ish: ArrayList<String>) : RecyclerView.Adapter<RecycleAdapter.GorunumOlusturucu>() {
     override fun getItemCount(): Int {
-        TODO("Not yet implemented")
+
+        return calisma_suresi.size
+
     }
 
 
