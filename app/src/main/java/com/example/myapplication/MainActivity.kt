@@ -6,13 +6,20 @@ import android.content.Intent
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
+import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import com.example.myapplication.databinding.ActivityMainBinding
+import com.google.firebase.auth.FirebaseAuth
+import com.google.firebase.auth.ktx.auth
+import com.google.firebase.ktx.Firebase
 
 class MainActivity : AppCompatActivity() {
     private lateinit var binding: ActivityMainBinding
+    private lateinit var auth: FirebaseAuth
     @SuppressLint("SuspiciousIndentation")
     override fun onCreate(savedInstanceState: Bundle?) {
+        auth= FirebaseAuth.getInstance()
+        auth= Firebase.auth
         super.onCreate(savedInstanceState)
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
@@ -21,15 +28,6 @@ class MainActivity : AppCompatActivity() {
 
 
 
-        try{
-        val veritabani = this.openOrCreateDatabase("Kullanici", MODE_PRIVATE,null)
-            veritabani.execSQL("CREATE TABLE IF NOT EXISTS kullanici_bilgileri (id INTEGER PRIMARY KEY, Ad VARCHAR, Soyad VARCHAR, Mail VARCHAR, Sifre VARCHAR)")
-            veritabani.execSQL("CREATE TABLE IF NOT EXISTS calisma_bilgileri(id INTEGER PRIMARY KEY, Mail VARCHAR, Sure DATETIME, Ish VARCHAR)")
-            veritabani.execSQL("INSERT INTO kullanici_bilgileri(Ad,Soyad,Mail,Sifre) VALUES('Zehra','Karakaya','zehrakarakayazeze@gmail.com','1234')")
-        }
-        catch(e:Exception){
-             e.printStackTrace()
-        }
     }
 
     override fun onStart() {
@@ -68,7 +66,21 @@ class MainActivity : AppCompatActivity() {
     }
 
 
-    fun Giris(view: View){
+    fun giris(view: View){
+
+        val mail = binding.mail.text.toString()
+        val password=binding.Sifre.text.toString()
+
+        auth.signInWithEmailAndPassword(mail,password).addOnCompleteListener { task->
+            if (task.isSuccessful){
+                val intent = Intent(applicationContext,AnaSayfa::class.java)
+                startActivity(intent)
+                finish()
+            }
+        }.addOnFailureListener { exception->
+            Toast.makeText(this,exception.localizedMessage,Toast.LENGTH_LONG).show()
+        }
+
 
     }
     fun Kaydol(view: View){
