@@ -2,6 +2,6 @@
 
     <style name="Widget.Theme.MyApplication.MyView" parent="">
         <item name="android:background">@color/gray_600</item>
-        <item name="exampleColor">@color/light_blue_600</item>
+        <item name="exampleColor">#D52C245A</item>
     </style>
 </resources>

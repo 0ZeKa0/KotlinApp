@@ -68,12 +68,13 @@ class MainActivity : AppCompatActivity() {
 
     fun giris(view: View){
 
-        val mail = binding.mail.text.toString()
+        val mail=binding.mail.text.toString()
         val password=binding.Sifre.text.toString()
 
         auth.signInWithEmailAndPassword(mail,password).addOnCompleteListener { task->
             if (task.isSuccessful){
-                val intent = Intent(applicationContext,AnaSayfa::class.java)
+                Toast.makeText(this,"Hoşgeldiniz",Toast.LENGTH_LONG)
+                val intent = Intent(applicationContext,MainActivity2::class.java)
                 startActivity(intent)
                 finish()
             }
