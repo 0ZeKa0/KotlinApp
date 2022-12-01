@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "1017687848592",
+    "project_id": "calismaduzenleyici",
+    "storage_bucket": "calismaduzenleyici.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1017687848592:android:2924ec035d65d3a1650a15",
+        "android_client_info": {
+          "package_name": "com.example.myapplication"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1017687848592-tcnbluokrdcab5umg146n6q4nbis7smo.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDnpYj4G4qUN8LubOQpK5T67BUXYF1BRDY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1017687848592-tcnbluokrdcab5umg146n6q4nbis7smo.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
