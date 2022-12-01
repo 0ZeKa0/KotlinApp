@@ -69,9 +69,7 @@ class MainActivity : AppCompatActivity() {
 
 
     fun Giris(view: View){
-        val intent = Intent(applicationContext, MainActivity2::class.java)
-        startActivity(intent)
-        finish()
+
     }
     fun Kaydol(view: View){
         val intent = Intent(applicationContext,MainActivity3::class.java)

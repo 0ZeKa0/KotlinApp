@@ -26,7 +26,9 @@
             android:layout_height="33dp"
             android:layout_gravity="center"
             android:layout_margin="15dp"
-            android:background="@drawable/custom_input" />
+            android:background="@drawable/custom_input"
+            android:hint=" Name"
+            android:textSize="15dp"/>
 
         <EditText
             android:id="@+id/soyisim"
@@ -34,7 +36,9 @@
             android:layout_height="33dp"
             android:layout_gravity="center"
             android:layout_margin="15dp"
-            android:background="@drawable/custom_input" />
+            android:background="@drawable/custom_input"
+            android:hint=" Surname"
+            android:textSize="15dp"/>
 
         <EditText
             android:id="@+id/mail2"
@@ -42,7 +46,9 @@
             android:layout_height="33dp"
             android:layout_gravity="center"
             android:layout_margin="15dp"
-            android:background="@drawable/custom_input" />
+            android:background="@drawable/custom_input"
+            android:hint=" e-mail"
+            android:textSize="15dp"/>
 
         <EditText
             android:id="@+id/sifre2"
@@ -52,7 +58,9 @@
             android:layout_margin="15dp"
             android:background="@drawable/custom_input"
             android:ems="10"
-            android:inputType="textPassword" />
+            android:hint=" Password"
+            android:inputType="textPassword"
+            android:textSize="15dp"/>
 
         <Button
             android:id="@+id/Kayit"
