@@ -3,10 +3,7 @@ package com.example.myapplication
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import androidx.appcompat.view.menu.ActionMenuItemView
 import androidx.recyclerview.widget.RecyclerView
-import androidx.recyclerview.widget.RecyclerView.Recycler
-import androidx.recyclerview.widget.RecyclerView.ViewHolder
 
 class RecycleAdapter(val calisma_suresi: ArrayList<String>,val Ish: ArrayList<String>) : RecyclerView.Adapter<RecycleAdapter.GorunumOlusturucu>() {
     override fun getItemCount(): Int {
@@ -22,7 +19,7 @@ class RecycleAdapter(val calisma_suresi: ArrayList<String>,val Ish: ArrayList<St
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): GorunumOlusturucu {
         val inflater=LayoutInflater.from(parent.context)
-        val view = inflater.inflate(R.layout.fragment_2,parent,false)
+        val view = inflater.inflate(R.layout.fragment1,parent,false)
         return GorunumOlusturucu(view)
     }
 
