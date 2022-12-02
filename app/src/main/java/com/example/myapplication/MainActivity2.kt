@@ -40,20 +40,6 @@ class MainActivity2 : AppCompatActivity() {
 
 
     }
-    override fun onCreateOptionsMenu(menu: Menu?): Boolean {
-        val menuInflater=menuInflater
-        menuInflater.inflate(R.menu.secenekler_menusu,menu)
-        return super.onCreateOptionsMenu(menu)
-
-    }
-
-    override fun onOptionsItemSelected(item: MenuItem): Boolean {
-        auth.signOut()
-        val intent = Intent(applicationContext,MainActivity::class.java)
-        startActivity(intent)
-        finish()
-        return super.onOptionsItemSelected(item)
-    }
 
     fun Ekle(view: View){
 

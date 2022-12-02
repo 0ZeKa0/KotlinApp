@@ -2,17 +2,17 @@
     <!-- Base application theme. -->
     <style name="Theme.MyApplication" parent="Theme.AppCompat.Light.DarkActionBar">
         <!-- Primary brand color. -->
-        <item name="colorPrimary">@color/purple_500</item>
-        <item name="colorPrimaryDark">@color/purple_700</item>
-        <item name="colorAccent">#7E5B4780</item>
+        <item name="colorPrimary">#BFB9CD</item>
+        <item name="colorPrimaryDark">#BFB9CD</item>
+        <item name="colorAccent">#BFB9CD</item>
         <item name="windowActionBar">false</item>
         <item name="windowNoTitle">true</item>
         <!-- Customize your theme here. -->
     </style>
 
     <style name="ThemeOverlay.MyApplication.FullscreenContainer" parent="">
-        <item name="fullscreenBackgroundColor">#7EB7D3</item>
-        <item name="fullscreenTextColor">#8FB5D2DF</item>
+        <item name="fullscreenBackgroundColor">#9FB0CF</item>
+        <item name="fullscreenTextColor">#8090AE</item>
     </style>
 
     <style name="Theme.MyApplication.NoActionBar">
