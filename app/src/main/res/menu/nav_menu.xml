@@ -13,7 +13,12 @@
     <item
         android:id="@+id/me"
         android:icon="@drawable/ic_baseline_face_24"
-        android:title="me"/>
+        android:title="profile"/>
+    <item
+      android:id="@+id/signout"
+      android:icon="@drawable/ic_baseline_logout_24"
+      android:title="signout"/>
+
 
 
 </menu>

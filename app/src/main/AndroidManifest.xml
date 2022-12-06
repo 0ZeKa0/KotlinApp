@@ -17,19 +17,13 @@
             android:name=".MainActivity2"
             android:exported="false"
             android:label="@string/title_activity_main2"
-            android:theme="@style/Theme.MyApplication.NoActionBar">
-            <meta-data
-                android:name="android.app.lib_name"
-                android:value="" />
-        </activity>
-        <activity
-            android:name=".AnaSayfa"
-            android:exported="false"
+            android:theme="@style/Theme.MyApplication.NoActionBar"
             android:screenOrientation="sensor">
             <meta-data
                 android:name="android.app.lib_name"
                 android:value="" />
         </activity>
+
         <activity
             android:name=".MainActivity4"
             android:exported="false"

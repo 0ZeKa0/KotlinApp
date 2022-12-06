@@ -10,7 +10,8 @@
         android:id="@+id/fl_wrapper"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_above="@+id/buttom_navigation"/>
+        android:layout_above="@+id/buttom_navigation"
+        android:background="@color/white"/>
 
     <com.google.android.material.bottomnavigation.BottomNavigationView
         android:id="@+id/buttom_navigation"
@@ -18,7 +19,7 @@
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
         android:background="#794D7DBC"
-        app:itemBackground="#794D7DBC"
+        app:itemBackground="@color/eflatun"
         app:itemIconTint="#fff"
         app:itemTextColor="#fff"
         app:menu="@menu/nav_menu" />

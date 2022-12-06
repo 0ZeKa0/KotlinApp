@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<MotionScene xmlns:motion="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <Transition
+        motion:autoTransition="animateToEnd"
+        motion:constraintSetEnd="@layout/activity_main13"
+        motion:constraintSetStart="@layout/activity_main12"
+        motion:duration="5000"
+        >
+
+        <KeyFrameSet>
+
+            <KeyPosition
+                motion:framePosition="65"
+                motion:keyPositionType="deltaRelative"
+                motion:motionTarget="@+id/logo"
+                motion:percentY="0"
+                motion:percentX="0"
+                />
+
+            <KeyPosition
+                motion:framePosition="75"
+                motion:keyPositionType="deltaRelative"
+                motion:motionTarget="@+id/logo"
+                motion:percentY="0"
+                motion:percentX="0"
+                />
+
+            <KeyAttribute
+                android:rotation="0"
+                motion:framePosition="0"
+                motion:motionTarget="@+id/logo" />
+
+            <KeyAttribute
+                android:rotation="180"
+                motion:framePosition="85"
+                motion:motionTarget="@+id/logo" />
+
+
+        </KeyFrameSet>
+
+    </Transition>
+</MotionScene>
