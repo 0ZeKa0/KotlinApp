@@ -10,26 +10,26 @@
     tools:context=".MainActivity4">
 
 
-    <TextView
-        android:id="@+id/textView2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:layout_marginTop="184dp"
-        android:text="E posta adresinizi girin."
-        app:layout_constraintBottom_toTopOf="@+id/linearLayout2"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.6"
-        tools:ignore="UnknownId" />
-
     <LinearLayout
     android:layout_width="wrap_content"
     android:layout_height="match_parent"
     android:layout_gravity="center"
-    android:orientation="horizontal">
+    android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="184dp"
+            android:text=""
+            app:layout_constraintBottom_toTopOf="@+id/linearLayout2"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.498"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.6"
+            tools:ignore="UnknownId" />
 
         <EditText
             android:id="@+id/mail2"
@@ -43,7 +43,7 @@
             android:ems="10"
             android:hint=" e-mail"
             android:inputType="textPersonName"
-            android:textColor="@android:color/darker_gray"
+            android:textColor="@color/black"
             android:textSize="15sp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toStartOf="@+id/button"
@@ -56,8 +56,8 @@
         <Button
             android:id="@+id/Gonder"
             style="@style/Widget.AppCompat.Button.Borderless.Colored"
-            android:layout_width="wrap_content"
-            android:layout_height="28dp"
+            android:layout_width="299dp"
+            android:layout_height="32dp"
             android:layout_gravity="center"
             android:layout_margin="15dp"
             android:background="@drawable/custom_button"
@@ -67,9 +67,9 @@
             android:fallbackLineSpacing="true"
             android:filterTouchesWhenObscured="true"
             android:onClick="Gonder"
-            android:text="Gönder"
+            android:text="SEND RESET LINK"
             android:textAppearance="@style/TextAppearance.AppCompat.Body2"
-            android:textColor="#5B275BD5"
+            android:textColor="@color/white"
             android:textSize="13dp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"

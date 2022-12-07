@@ -27,7 +27,6 @@ class MainActivity : AppCompatActivity() {
         println("onCreate fonksiyonu çağırıldı")
 
 
-
     }
 
     override fun onStart() {
