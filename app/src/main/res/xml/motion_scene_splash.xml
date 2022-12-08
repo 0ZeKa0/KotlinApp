@@ -6,7 +6,7 @@
         motion:autoTransition="animateToEnd"
         motion:constraintSetEnd="@layout/activity_main13"
         motion:constraintSetStart="@layout/activity_main12"
-        motion:duration="5000"
+        motion:duration="2000"
         >
 
         <KeyFrameSet>
