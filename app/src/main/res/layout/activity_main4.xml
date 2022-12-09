@@ -63,7 +63,7 @@
             android:background="@drawable/custom_button"
             android:backgroundTint="#81ACC5C8"
             android:backgroundTintMode="src_over"
-            android:elevation="100dp"
+            android:elevation="10dp"
             android:fallbackLineSpacing="true"
             android:filterTouchesWhenObscured="true"
             android:onClick="Gonder"

@@ -17,6 +17,7 @@
 
         <EditText
             android:id="@+id/is"
+            android:hint="Task"
             android:layout_width="314dp"
             android:layout_height="33dp"
             android:layout_margin="10dp"
@@ -25,6 +26,7 @@
 
         <EditText
             android:id="@+id/zaman"
+            android:hint="Duration"
             android:layout_width="match_parent"
             android:layout_height="33dp"
             android:layout_margin="10dp"
@@ -40,8 +42,8 @@
             android:background="@drawable/custom_button"
             android:elevation="20dp"
             android:onClick="ayarla"
-            android:text="Ayarla"
-            android:textColor="@color/purple_200" />
+            android:text="Ok"
+            android:textColor="@color/white" />
 
     </LinearLayout>
 </FrameLayout>

@@ -9,8 +9,8 @@
 
 
     <LinearLayout
-        android:layout_width="376dp"
-        android:layout_height="303dp"
+        android:layout_width="382dp"
+        android:layout_height="325dp"
         android:orientation="vertical"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -28,7 +28,7 @@
             android:layout_margin="15dp"
             android:background="@drawable/custom_input"
             android:hint=" Name"
-            android:textSize="15dp"/>
+            android:textSize="15dp" />
 
         <EditText
             android:id="@+id/soyisim"
@@ -38,7 +38,7 @@
             android:layout_margin="15dp"
             android:background="@drawable/custom_input"
             android:hint=" Surname"
-            android:textSize="15dp"/>
+            android:textSize="15dp" />
 
         <EditText
             android:id="@+id/mail2"
@@ -46,10 +46,10 @@
             android:layout_height="33dp"
             android:layout_gravity="center"
             android:layout_margin="15dp"
-            android:inputType="textEmailAddress"
             android:background="@drawable/custom_input"
             android:hint=" e-mail"
-            android:textSize="15dp"/>
+            android:inputType="textEmailAddress"
+            android:textSize="15dp" />
 
         <EditText
             android:id="@+id/sifre2"
@@ -61,7 +61,7 @@
             android:ems="10"
             android:hint=" Password"
             android:inputType="textPassword"
-            android:textSize="15dp"/>
+            android:textSize="15dp" />
 
         <Button
             android:id="@+id/Kayit"
@@ -73,7 +73,7 @@
             android:background="@drawable/custom_button"
             android:backgroundTint="#81ACC5C8"
             android:backgroundTintMode="src_over"
-            android:elevation="100dp"
+            android:elevation="10dp"
             android:fallbackLineSpacing="true"
             android:filterTouchesWhenObscured="true"
             android:onClick="Kaydol"

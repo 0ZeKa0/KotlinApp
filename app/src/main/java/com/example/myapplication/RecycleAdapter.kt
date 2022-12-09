@@ -19,7 +19,7 @@ class RecycleAdapter(val calisma_suresi: ArrayList<String>,val Ish: ArrayList<St
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): GorunumOlusturucu {
         val inflater=LayoutInflater.from(parent.context)
-        val view = inflater.inflate(R.layout.fragment1,parent,false)
+        val view = inflater.inflate(R.layout.fragment_home,parent,false)
         return GorunumOlusturucu(view)
     }
 
