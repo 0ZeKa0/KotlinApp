@@ -1,11 +1,4 @@
 package com.example.myapplication
 
-class calisma_kayitlari {
-    var calisma_suresi=""
-    var Is=""
+data class calisma_kayitlari(var calisma_suresi: Int, var Is: String)
 
-    constructor(calisma_suresi:String,Is:String){
-        this.calisma_suresi=calisma_suresi
-        this.Is=Is
-    }
-}
