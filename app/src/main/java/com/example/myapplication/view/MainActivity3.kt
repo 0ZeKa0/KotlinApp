@@ -1,4 +1,4 @@
-package com.example.myapplication
+package com.example.myapplication.view
 
 import android.content.Intent
 import android.os.Bundle
@@ -6,7 +6,7 @@ import android.view.View
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import com.example.myapplication.databinding.ActivityMain3Binding
-import com.example.myapplication.databinding.ActivityMainBinding
+import com.example.myapplication.model.kisi_kayitlari
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.auth.ktx.auth
 import com.google.firebase.database.DatabaseReference
@@ -36,13 +36,13 @@ class MainActivity3 : AppCompatActivity() {
         val e_mail=binding.mail2.text.toString()
         val password=binding.sifre2.text.toString()
 
-        val user=kisi_kayitlari(name,surname,e_mail)
+        val user= kisi_kayitlari(name,surname,e_mail)
 
         auth.createUserWithEmailAndPassword(e_mail, password).addOnCompleteListener { task->
            if (task.isSuccessful){
                Toast.makeText(this,"Success.",Toast.LENGTH_LONG).show()
 
-               val intent=Intent(applicationContext,MainActivity::class.java)
+               val intent=Intent(applicationContext, MainActivity::class.java)
                startActivity(intent)
                finish()
 

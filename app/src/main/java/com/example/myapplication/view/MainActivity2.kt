@@ -1,13 +1,11 @@
-package com.example.myapplication
+package com.example.myapplication.view
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.text.TextUtils.replace
 import androidx.fragment.app.Fragment
-import androidx.fragment.app.FragmentManager
-import androidx.fragment.app.FragmentTransaction
 import androidx.recyclerview.widget.RecyclerView
+import com.example.myapplication.R
 import com.example.myapplication.databinding.ActivityMain2Binding
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.auth.ktx.auth

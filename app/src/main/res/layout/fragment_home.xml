@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:theme="@style/ThemeOverlay.MyApplication.FullscreenContainer"
-    tools:context=".Fragment2">
+    tools:context=".view.Fragment2">
 
 
     <LinearLayout

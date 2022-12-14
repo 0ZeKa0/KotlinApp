@@ -1,10 +1,8 @@
-package com.example.myapplication
+package com.example.myapplication.view
 
 import android.annotation.SuppressLint
-import android.content.DialogInterface
 import android.content.Intent
 import android.os.Bundle
-import android.view.LayoutInflater
 import android.view.View
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
@@ -73,7 +71,7 @@ class MainActivity : AppCompatActivity() {
         auth.signInWithEmailAndPassword(mail,password).addOnCompleteListener { task->
             if (task.isSuccessful){
                 Toast.makeText(this,"Hoşgeldiniz",Toast.LENGTH_LONG)
-                val intent = Intent(applicationContext,MainActivity2::class.java)
+                val intent = Intent(applicationContext, MainActivity2::class.java)
                 startActivity(intent)
                 finish()
             }
@@ -84,13 +82,13 @@ class MainActivity : AppCompatActivity() {
 
     }
     fun Kaydol(view: View){
-        val intent = Intent(applicationContext,MainActivity3::class.java)
+        val intent = Intent(applicationContext, MainActivity3::class.java)
         startActivity(intent)
         finish()
 
     }
     fun SifremiUnuttum(view: View){
-        val intent = Intent(applicationContext,MainActivity4::class.java)
+        val intent = Intent(applicationContext, MainActivity4::class.java)
         startActivity(intent)
         finish()
 

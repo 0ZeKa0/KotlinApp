@@ -14,7 +14,7 @@
         android:theme="@style/Theme.MyApplication"
         tools:targetApi="31">
         <activity
-            android:name=".MainActivity2"
+            android:name=".view.MainActivity2"
             android:exported="false"
             android:label="@string/title_activity_main2"
             android:theme="@style/Theme.MyApplication.NoActionBar"
@@ -25,7 +25,7 @@
         </activity>
 
         <activity
-            android:name=".MainActivity4"
+            android:name=".view.MainActivity4"
             android:exported="false"
             android:screenOrientation="sensor">
             <meta-data
@@ -33,7 +33,7 @@
                 android:value="" />
         </activity>
         <activity
-            android:name=".MainActivity3"
+            android:name=".view.MainActivity3"
             android:exported="false"
             android:screenOrientation="sensor">
             <meta-data
@@ -41,7 +41,7 @@
                 android:value="" />
         </activity>
         <activity
-            android:name=".MainActivity"
+            android:name=".view.MainActivity"
             android:exported="true"
             android:screenOrientation="sensor">
             <intent-filter>

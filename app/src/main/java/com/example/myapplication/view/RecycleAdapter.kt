@@ -1,9 +1,10 @@
-package com.example.myapplication
+package com.example.myapplication.view
 
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
+import com.example.myapplication.R
 
 class RecycleAdapter(val calisma_suresi: ArrayList<String>,val Ish: ArrayList<String>) : RecyclerView.Adapter<RecycleAdapter.GorunumOlusturucu>() {
     override fun getItemCount(): Int {

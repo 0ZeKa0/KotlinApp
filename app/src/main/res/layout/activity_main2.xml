@@ -4,14 +4,20 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity2">
+    tools:context=".view.MainActivity2">
 
     <FrameLayout
         android:id="@+id/fl_wrapper"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_above="@+id/buttom_navigation"
-        android:background="@color/white"/>
+        android:background="@color/white">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/Recycler_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </FrameLayout>
 
     <com.google.android.material.bottomnavigation.BottomNavigationView
         android:id="@+id/buttom_navigation"
