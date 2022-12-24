@@ -1,6 +1,8 @@
 package com.example.myapplication.view
 
 import android.os.Bundle
+import android.os.Handler
+import android.os.Looper
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
@@ -18,6 +20,10 @@ class home : Fragment() {
     // TODO: Rename and change types of parameters
     private var param1: String? = null
     private var param2: String? = null
+    private lateinit var listeAdapter: RecycleAdapter
+    private val hideHandler = Handler(Looper.myLooper()!!)
+    val calisma_suresi= ArrayList<String>()
+    val Is = ArrayList<String>()
 
 
 
@@ -46,7 +52,14 @@ class home : Fragment() {
         _binding = null
     }
 
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        listeAdapter = RecycleAdapter(calisma_suresi,Is)
+        super.onViewCreated(view, savedInstanceState)
+    }
+    fun ADD(view: View){
+        
 
+    }
     companion object {
 
         // TODO: Rename and change types and number of parameters
